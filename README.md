@@ -1,6 +1,9 @@
 # j-widgets
 方便自己写表单项目的小模板(与其说是模板，倒不如说是自己表单页面常用的方法集合，解决ios点击输入框页面顶上去下不来,表单验证，toast弹框，loading，alert弹出层等);
 代码问题多多，一般表单项目够用,jui.js中有关于表单验证(需要在在页面中填写特殊元素)，toast弹框，loading，alert弹出层等。方法initInput()可以解决ios 点击输入框时，页面下不来的情况;em...
+# ios点击输入框导致页面下不来
+直接调用</br>
+j.initInput()
 # 表单验证
 首先页面中将需要验证的input/texteare/select/加入俩个元素 
 1、j-type:'为不和input自带的type冲突.. 同时在验证的时候是通过j-type来判断类型的，目前支持text&textarea(文本，判空)/mail（邮箱）/phone（手机号）/identity（身份证,身份证验证开了生日验证/城市验证/长度验证，如需跟精准的验证，可通过在jui.js中取消isIdentityCard内注释的代码'
