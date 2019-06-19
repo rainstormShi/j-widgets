@@ -71,10 +71,10 @@
     // 表单验证
     ,verifyData:function(){
       var isOk = true;
-      $("input").css("border","0")
-      $("textarea").css("border","1px solid #f2f2f2")
       $.each(requiredArray,function(arrIndex,arrItem){
         var thatInput = $("[name='"+arrItem.name+"']")
+        thatInput.css("border","0")
+        thatInput.css("border","1px solid #f2f2f2")
         if((arrItem.type == "text" || arrItem.type == "textarea") && !_.valueIsEmpty(arrItem.type)){
           if(_.valueIsEmpty(thatInput.val())){
             thatInput.css("border","1px solid red");
